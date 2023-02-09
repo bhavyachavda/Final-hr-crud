@@ -1,0 +1,34 @@
+create table employee_19(
+recid bigint(20) primary key AUTO_INCREMENT,
+firstname varchar(100),
+lastname varchar(100),
+employeeid int(50),
+contactnumber int(50),
+homeaddress varchar(255),
+worklocation varchar(255)
+)
+
+alter table employee19 add column isactive bool default true;
+
+create table hr19(
+recid bigint(20) primary key AUTO_INCREMENT,
+employeepayroll varchar(100),
+socialsecurity varchar(100),
+employeeid int(50),
+salary int(50)
+);
+
+alter table hr19 add column isactive bool default true;
+
+create table location19(
+recid bigint(20) primary key AUTO_INCREMENT,
+locations varchar(100),
+buildingid int(100),
+address varchar(500),
+zipcode int(50),
+nmanager varchar(255)
+);
+
+select * from location19;
+
+alter table location19 add column isactive bool default true;
